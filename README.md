@@ -28,9 +28,7 @@ A lightweight Node.js-based command-line application to manage tasks locally usi
 
 1. **Clone the repository** or download the files.
 
-2. Make sure `tasks.json` is in the root directory (it will be created automatically on first run).
-
-3. Run commands using:
+2. Run commands using:
 
 ```bash
 
