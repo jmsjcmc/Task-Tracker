@@ -122,7 +122,7 @@ Removes the task with the specified `id`.
 
 ---
 
-## ## 🗃️ Data Storage
+## 🗃️ Data Storage
 
 All tasks are stored in a local JSON file: `tasks.json`. Each task has the following structure:
 ```json
