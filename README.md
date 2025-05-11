@@ -1,3 +1,4 @@
+
 # 📝 Task Manager CLI
 
   
@@ -6,11 +7,11 @@ A lightweight Node.js-based command-line application to manage tasks locally usi
 
   
 
----
+
 
   
 
-## 📦 Prerequisites
+## 📦 Requirements
 
   
 
@@ -18,7 +19,21 @@ A lightweight Node.js-based command-line application to manage tasks locally usi
 
   
 
----
+
+## 📂 Project Structure
+
+```
+
+.
+
+├── README.js # Project documentation
+
+├── index.js # Main CLI script
+
+└── tasks.json # Stores task
+
+```
+
 
   
 
@@ -38,7 +53,7 @@ node index.js <command> <arguments>
 
   
 
----
+
 
 ## 🛠️ Available Commands
 
@@ -54,7 +69,7 @@ Adds a task with status `todo` and stores the creation time.
 
   
 
----
+
 
   
 
@@ -72,7 +87,7 @@ Lists all tasks. Optionally filter by status: `todo`,  `in-progress`, or `done`.
 
   
 
----
+
 
   
 
@@ -88,7 +103,7 @@ Updates the description of the task with the given `id`.
 
   
 
----
+
 
   
 
@@ -110,7 +125,7 @@ Example:
 node index.js status 1683456172634 done
 ```
 
----
+
 
 ## ❌ Delete a Task
 ```bash
@@ -118,7 +133,7 @@ node index.js delete <task_id>
 ```
 Removes the task with the specified `id`.
 
----
+
 
 ## 🗃️ Data Storage
 
@@ -132,7 +147,7 @@ All tasks are stored in a local JSON file: `tasks.json`. Each task has the follo
   "updatedAt": "N/A"
 }
 ```
----
+
 ## ℹ️ How It Works
 
  - **File System Module (`fs`):**
@@ -141,7 +156,7 @@ All tasks are stored in a local JSON file: `tasks.json`. Each task has the follo
  - `process.argv`
  Node.js exposes command-line arguments via the `process.argv` array. The CLI reads the command (`add`, `list`, etc.) and arguments (e.g. task description or ID) from this array to determine what action to perform.
 
----
+
 
 ## 🧠 Notes
 
@@ -149,6 +164,6 @@ All tasks are stored in a local JSON file: `tasks.json`. Each task has the follo
  - Timestamps use ISO string format.
  - `updatedAt` is `"N/A"` until the task is updated or its status is changed.
 
----
+
 ## 📁 Project URL
 https://roadmap.sh/projects/task-tracker
