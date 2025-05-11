@@ -26,7 +26,7 @@ A lightweight Node.js-based command-line application to manage tasks locally usi
 
 .
 
-├── README.js # Project documentation
+├── README.md # Project documentation
 
 ├── index.js # Main CLI script
 
